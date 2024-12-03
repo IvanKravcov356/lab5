@@ -1,3 +1,8 @@
+# Добавьте в calculator/calculator.py
+
+def power(a, b):
+    return a ** b
+
 def add(a, b):
     return a + b
 
@@ -18,8 +23,13 @@ if __name__ == "__main__":
     y = float(input("Enter second number: "))
     op = input("Enter operation (+, -, *, /): ")
 
+
     if op == '+':
         result = add(x, y)
+# Обновите раздел с выбором операции:
+
+    elif op == '^':
+        result = power(x, y)
     elif op == '-':
         result = subtract(x, y)
     elif op == '*':
